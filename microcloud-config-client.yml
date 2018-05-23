@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: microconfig-test-dev
+    name: microconfig-config-client
 eureka:
   client: #客服端进行EureKa服务配置
     service-url:
@@ -25,7 +25,7 @@ server:
 spring:
   profiles: bate
   application:
-    name: microconfig-test-bate
+    name: microconfig-config-client
 eureka:
   client: #客服端进行EureKa服务配置
     service-url:
