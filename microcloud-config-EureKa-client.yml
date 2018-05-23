@@ -15,13 +15,14 @@ eureka:
   client:                      #在默认设置下，Eureka服务注册中心也会将自己作为客户端来尝试注册它自己，所以我们需要禁用它的客户端注册行为。
     register-with-eureka: false   #false 表示当前的服务器不注册到eureKa 
     fetch-registry: false         #不从eureKa服务中获取信息
-    
+    service-url:
+      defaultZone: http://eurekaDev:eurekaDev@eureka-7004.com:7004/eureka/
 security:
   basic:
     enabled: true #启动安全认证
   user:
-    name: eureka
-    password: eureka
+    name: eurekaDev
+    password: eurekaDev
 
 ---
 spring:
@@ -36,10 +37,11 @@ eureka:
   client:                      #在默认设置下，Eureka服务注册中心也会将自己作为客户端来尝试注册它自己，所以我们需要禁用它的客户端注册行为。
     register-with-eureka: false   #false 表示当前的服务器不注册到eureKa 
     fetch-registry: false         #不从eureKa服务中获取信息
-    
+    service-url:
+      defaultZone: http://eurekaBate:eurekaBate@eureka-7004.com:7004/eureka/
 security:
   basic:
     enabled: true #启动安全认证
   user:
-    name: eureka
-    password: eureka
+    name: eurekaBate
+    password: eurekaBate
