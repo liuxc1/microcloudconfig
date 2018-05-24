@@ -6,7 +6,7 @@ spring:
 server:
   port: 8001
 eureka:
-  client: #客服端进行EureKa服务配置
+  client: #客服端进行EureKa服务配置xx
     service-url:
       defaultZone: http://eurekaDev:eurekaDev@eureka-7004.com:7004/eureka/#加入了认证用户和密码的请求连接
   instance:
