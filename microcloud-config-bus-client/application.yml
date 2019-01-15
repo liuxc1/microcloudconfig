@@ -42,6 +42,6 @@ eureka:
     prefer-ip-address: true     #访问的路径变成ip地址
 
 info:
-  app.name: microconfig-config-bate-1
+  app.name: microconfig-config-bate-2
   company.name: www.liuxc.com
-  app.version: v.0.0.1
+  app.version: v.0.0.2
