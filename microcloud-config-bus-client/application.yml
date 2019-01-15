@@ -19,6 +19,11 @@ eureka:
     instance-id: client-8101.com    #在信息列表中显示主机名称
     prefer-ip-address: true     #访问的路径变成ip地址
 
+info:
+  app.name: microconfig-config-dev-1
+  company.name: www.liuxc.com
+  app.version: v.0.0.1
+
 ---
 server:
   port: 8102
@@ -35,3 +40,8 @@ eureka:
     lease-expiration-duration-in-seconds: 90 #心跳间隔周期，默认是90秒
     instance-id: client-8102.com    #在信息列表中显示主机名称
     prefer-ip-address: true     #访问的路径变成ip地址
+
+info:
+  app.name: microconfig-config-bate-1
+  company.name: www.liuxc.com
+  app.version: v.0.0.1
