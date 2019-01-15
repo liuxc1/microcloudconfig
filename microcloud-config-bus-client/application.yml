@@ -3,12 +3,35 @@ spring:
     active:
       - dev
 ---
+server:
+  port: 8101
 spring:
   profiles: dev
   application:
-    name: microconfig-test-dev
+    name: microconfig-config-bus-client
+eureka:
+  client: #客服端进行EureKa服务配置
+    service-url:
+      defaultZone: http://eureka:eureka@eureka-7004.com:7004/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30 #设置心跳间隔时间，默认是30秒
+    lease-expiration-duration-in-seconds: 90 #心跳间隔周期，默认是90秒
+    instance-id: client-8101.com    #在信息列表中显示主机名称
+    prefer-ip-address: true     #访问的路径变成ip地址
+
 ---
+server:
+  port: 8102
 spring:
-  profiles: default
+  profiles: bate
   application:
-    name: microconfig-test-default
+    name: microconfig-config-bus-client
+eureka:
+  client: #客服端进行EureKa服务配置
+    service-url:
+      defaultZone: http://eureka:eureka@eureka-7004.com:7004/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30 #设置心跳间隔时间，默认是30秒
+    lease-expiration-duration-in-seconds: 90 #心跳间隔周期，默认是90秒
+    instance-id: client-8102.com    #在信息列表中显示主机名称
+    prefer-ip-address: true     #访问的路径变成ip地址
